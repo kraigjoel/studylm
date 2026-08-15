@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-ollama
+langchain-text-splitters
+
+pymupdf
+chromadb
+
+sentence-transformers
+
+streamlit
