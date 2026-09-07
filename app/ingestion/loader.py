@@ -1,11 +1,11 @@
-import fitz
+import pymupdf
 from pathlib import Path
 
 def load_documents(folder="data/documents"):
     docs = []
 
     for file in Path(folder).glob("*.pdf"):
-        pdf = fitz.open(file)
+        pdf = pymupdf.open(file)
 
         text = ""
 
