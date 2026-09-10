@@ -30,3 +30,4 @@ def retrieve(query, k=4):
     )
 
     return results
+
