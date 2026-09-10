@@ -19,3 +19,14 @@ def index_chunks(chunks):
             embeddings=[embedding],
             metadatas=[{"source": chunk["source"]}]
         )
+
+def retrieve(query, k=4):
+
+    embedding = model.encode(query).tolist()
+
+    results = collection.query(
+        query_embeddings=[embedding],
+        n_results=k
+    )
+
+    return results
