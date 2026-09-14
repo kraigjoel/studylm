@@ -18,5 +18,10 @@ Question:
 
 If the answer is not contained in the notes, say so.
 """
-
+    print("\n" + "=" * 80)
+    print("PROMPT SENT TO LLM:")
+    print("=" * 80)
+    print(prompt)
+    print("=" * 80)
+    
     return llm.invoke(prompt)
